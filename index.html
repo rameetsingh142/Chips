@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DontEatBlueChips.com</title>
+    <link rel="icon" href="banner1.png" />
+</head>
+
+<style>
+    body{
+        margin: 0;
+        background-image: url("banner1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .image-cont{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .twitter{
+        height: 3vw;
+        position: absolute;
+        bottom: 1.7vh;
+        left: 50vw;
+        z-index: 222;
+        cursor: pointer;
+    }
+
+    @media only screen and (max-width: 768px) {
+        body {
+            background-image: url("banner-mobile1.png");
+            background-position: center;
+            background-size: 100vw 100vh;
+        }
+
+        .twitter{
+            height: 60px;
+            position: absolute;
+            align-self: center;
+            bottom: 6vh;
+            left: 45vw;
+        }
+    }
+</style>
+
+<body>
+    <div class="image-cont">
+        <img class="twitter" src="twitter.svg" alt="twitter"/>
+    </div>
+</body>
+</html>
